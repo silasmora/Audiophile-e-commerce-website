@@ -1,16 +1,18 @@
-import { useState } from 'react'
-
+import { Routes, Route } from "react-router-dom"
+import Header from "./components/Header"
+import Home from "./pages/Home"
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <div className='text-[#D87D4A]'>
-        TESTING, THIS PROJECT WILL GO IN MY PORTFOLIO
-      </div>
-        
-    </>
+    
+    <div className="">
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+      </Routes>
+    </div>
+    
   )
 }
 
