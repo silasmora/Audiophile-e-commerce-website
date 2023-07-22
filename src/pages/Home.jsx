@@ -11,19 +11,15 @@ const Home = () => {
     <div>
       <Hero />
       <div className='bg-backgroundWhite w-screen'>
-        <div className='pt-12'>
-        <NavItems />
+        <div className='pt-20'>
+          <NavItems />
         </div>
-        <div className=''>
-          <Zx9Preview />
-        </div>
-        <div className='py-12'>
-          <Zx7Preview /> 
-        </div>
-        <div className=''>
-          <Yx1Preview />  
-        </div>
-        <div>
+        <Zx9Preview />
+        <div className='py-6'>
+          <Zx7Preview />
+        </div> 
+        <Yx1Preview /> 
+        <div className='py-[120px] md:py-[96px] lg:py-[200px]'>
           <BestGear />
         </div>
       </div>

@@ -4,17 +4,17 @@ const Context = React.createContext()
 
 const ContextProvider = ({children}) => {
 
-  const [product, setProduct] = useState('')
+  const [audiophileData, setAudiophileData] = useState([])
 
   useEffect(() => {
-    fetch('./starter-code/data.json')
+    fetch('/starter-code/data.json')
       .then(res => res.json())
-      .then(data => setProduct(data))
+      .then(data => setAudiophileData(data))
   }, [])
   
-
+  
   const value = {
-    
+    audiophileData
   }
   return (
     <Context.Provider value={value}>
