@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import headphones from '/shared/desktop/image-category-thumbnail-headphones.png'
 import speakers from '/shared/desktop/image-category-thumbnail-speakers.png'
 import earphones from '/shared/desktop/image-category-thumbnail-earphones.png'
@@ -11,27 +11,10 @@ export const NavItemsModal = () => {
 
   const navigate = useNavigate()
 
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (isNavItemsModal && e.target.classList.contains('bg-black/75')) {
-        setIsNavItemsModal(false)
-      }
-    }
-    document.addEventListener('click', handleClickOutside)
-    document.body.style.overflow = isNavItemsModal ? 'hidden' : 'auto'
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside)
-      document.body.style.overflow = 'auto'
-    }
-  }, [isNavItemsModal, setIsNavItemsModal])
-
-
-
   return (
     <>
       {isNavItemsModal && (
-        <div className='fixed left-0 right-0 bottom-0 top-[9%] flex flex-col bg-black/75 z-[100]'>
+        <div className='absolute left-0 right-0 bottom-0 top-[2.2%] h-full bg-black/75 z-[100]'>
       
           <div className='flex flex-col p-6 gap-4 bg-backgroundWhite md:flex-row'>
             <div

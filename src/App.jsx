@@ -31,7 +31,7 @@ function App() {
   
   return (
     
-    <>
+    <div className="relative">
       <Header />
       <NavItemsModal />
       <Cart />
@@ -53,7 +53,7 @@ function App() {
         <Route path='/checkout' element={<Checkout />} />
       </Routes>
       <Footer />
-    </>
+    </div>
     
   )
 }
