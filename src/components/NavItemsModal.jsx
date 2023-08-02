@@ -14,7 +14,7 @@ export const NavItemsModal = () => {
   return (
     <>
       {isNavItemsModal && (
-        <div className='absolute left-0 right-0 bottom-0 top-[2%] h-full bg-black/75 z-[100]'>
+        <div className='absolute left-0 right-0 bottom-0 top-[1.5%] h-full bg-black/75 z-[100]'>
       
           <div className='flex flex-col p-6 gap-4 bg-backgroundWhite md:flex-row'>
             <div
