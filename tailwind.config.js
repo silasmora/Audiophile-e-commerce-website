@@ -22,6 +22,9 @@ export default {
         rectangleLine: '#fffff',
         grayWhite: '#F1F1F1',
         backgroundWhite: '#FAFAFA',
+        heroBlack: '#0E0E0E',
+        inputBorder: '#CFCFCF',
+        formatRed: '#CD2C2C'
       },
       backgroundImage: {
         heroMobile: "url(/home/mobile/image-header.jpg)",

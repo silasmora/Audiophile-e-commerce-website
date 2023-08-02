@@ -2,8 +2,12 @@ import React from 'react'
 import zx9Mobile from '/product-zx9-speaker/mobile/image-category-page-preview.jpg'
 import zx9Tablet from '/product-zx9-speaker/tablet/image-category-page-preview.jpg'
 import zx9Desktop from '/product-zx9-speaker/desktop/image-category-page-preview.jpg'
+import { useNavigate } from 'react-router-dom'
 
 const Zx9Category = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className='flex flex-col mx-6 md:mx-10 lg:mx-auto max-w-[1110px] lg:flex-row lg:gap-28'>
       <img className='pb-8 md:hidden' src={zx9Mobile} />
@@ -15,7 +19,9 @@ const Zx9Category = () => {
         <p className='text-center text-[15px] font-medium leading-[25px] opacity-50 indent-1 lg:text-left lg:indent-0 md:pb-2 lg:pb-4'>AUpgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker 
         system that offers truly wireless connectivity -- creating new possibilities for more 
         pleasing and practical audio setups.</p>
-        <button className='cursor-pointer text-white bg-orange py-[15px] px-[30px] uppercase tracking-[1px] text-[13px] font-bold self-center lg:self-start hover:bg-orangeLight'>See product</button>
+        <button 
+          onClick={() => navigate('/speakers/zx9')}
+          className='cursor-pointer text-white bg-orange py-[15px] px-[30px] uppercase tracking-[1px] text-[13px] font-bold self-center lg:self-start hover:bg-orangeLight'>See product</button>
       </div>
     </div>
   )
