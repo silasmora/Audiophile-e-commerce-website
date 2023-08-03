@@ -26,7 +26,7 @@ export const NavItemsModal = () => {
       {isNavItemsModal && (
         <div className='absolute left-0 right-0 bottom-0 top-0 h-full bg-black/75 z-[100]'>
       
-          <div className={`flex flex-col p-6 gap-4 bg-backgroundWhite md:flex-row transform ease-in-out duration-500 ${navItemsOpen ? 'left-5 translate-x-0' : '-left-full translate-x-full'}`}>
+          <div className={`flex flex-col p-6 gap-4 bg-backgroundWhite md:flex-row transform ease-in-out duration-500 ${navItemsOpen ? '' : '-translate-x-full'}`}>
             <svg onClick={() => setIsNavItemsModal(false)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>

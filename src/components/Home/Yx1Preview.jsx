@@ -12,7 +12,7 @@ const Yx1Preview = () => {
       <img className='h-full w-full object-cover object-right rounded-lg md:hidden' src={yx1Mobile}/>
       <img className='hidden h-full w-full object-cover object-right rounded-lg md:block lg:hidden md:w-1/2' src={yx1Tablet} />
       <img className='hidden rounded-lg lg:block md:w-1/2' src={yx1Desktop} />
-      <div className='bg-grayWhite pl-6 flex flex-col justify-center rounded-lg md:w-1/2 md:pl-10 lg:pl-16'>
+      <div className='bg-grayWhite pl-6 py-10 flex flex-col justify-center rounded-lg md:w-1/2 md:pl-10 lg:pl-16'>
         <h1 className='text-[28px] font-bold tracking-[2px] uppercase pb-8'>Yx1 Earphones</h1>
         <button 
           onClick={() => navigate('/earphones/yx1')}
