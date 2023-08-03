@@ -14,8 +14,8 @@ export const RemoveProductModal = ({isRemoveProductModal, setIsRemoveProductModa
   return (
     <>
       {isRemoveProductModal && (
-        <div className='p-6 fixed inset-0 flex flex-col justify-start bg-black/75 md:z-[100]'>
-          <div className='bg-white p-6 md:w-[540px] md:mx-auto'>
+        <div className='fixed inset-0 flex flex-col justify-start shadow-inner bg-black/75 z-[100] sm:p-6'>
+          <div className='bg-white p-6 border-2 md:w-1/2 md:mx-auto'>
             <h1 className='text-md font-bold leading-7 tracking-[.857px] uppercase pb-4 md:text-xl md:leading-9 md:tracking-[1.143px]'>Remove Product(s)?</h1>
             <p className='text-black/50 font-sm leading-6 pb-4'>Are you sure you want remove the following item(s) from the cart?</p>
             {cartItems.map((item, index) => (
