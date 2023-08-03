@@ -13,6 +13,9 @@ const Cart = () => {
     const updatedCartItems = [...cartItems]
     updatedCartItems.splice(index, 1)
     setCartItems(updatedCartItems)
+    if (updatedCartItems.length === 0) {
+      setIsCart(false)
+    }
   }
 
   const handleDecrease = (index) => {
@@ -66,7 +69,7 @@ const Cart = () => {
   return (
     <>
       {isCart && totalQuantity ? (
-        <div className='p-6 fixed inset-0 bg-black/75 md:z-[100]'>
+        <div className='p-6 fixed inset-0 bg-black/75 z-[100]'>
           
           <div className={`bg-white px-[28px] py-8 flex flex-col gap-8 md:w-1/2 md:absolute transform 
           ${cartOpen ? 'right-5 translate-x-0' : '-right-full translate-x-full'} lg:max-w-[377px] lg:right-0 lg:top-0 lg:h-screen ease-in-out duration-500`}>
